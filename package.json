@@ -1,6 +1,6 @@
 {
   "name": "@halo-dev/convert-theme-config-to-next",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "",
   "main": "bin/index.js",
   "bin": {
