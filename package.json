@@ -1,0 +1,23 @@
+{
+  "name": "@halo-dev/convert-theme-config-to-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "bin": {
+    "convert-theme-config-to-next": "bin/index.js"
+  },
+  "scripts": {
+    "release": "release-it",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^9.4.0",
+    "yaml": "^2.1.1"
+  },
+  "devDependencies": {
+    "release-it": "^15.4.2"
+  }
+}
