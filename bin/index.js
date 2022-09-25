@@ -91,8 +91,7 @@ program
       form.group = key;
       form.label = group.label;
 
-      const formSchemas = [];
-      for (const itemKey in group.items) {
+      form.formSchema = Object.keys(group.items).map((itemKey) => {
         const item = group.items[itemKey];
 
         const formSchema = {
@@ -121,11 +120,8 @@ program
           formSchema.$formkit = "radio";
           formSchema.options = item.options;
         }
-
-        formSchemas.push(formSchema);
-      }
-
-      form.formSchema = formSchemas;
+        return formSchema;
+      });
 
       setting.spec.forms.push(form);
     }
