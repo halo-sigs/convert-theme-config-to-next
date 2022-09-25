@@ -4,7 +4,7 @@
 
 ## 使用
 
-转换 theme.yaml 文件：
+### theme.yaml
 
 ```bash
 npx @halo-dev/convert-theme-config-to-next theme -i path/to/theme.yaml
@@ -18,7 +18,9 @@ cd path/to/theme
 npx @halo-dev/convert-theme-config-to-next theme
 ```
 
-转换 settings.yaml 文件：
+转换完成之后需要修改 `metadata.name` `spec.settingName` `spec.configMapName`。
+
+### settings.yaml
 
 ```bash
 npx @halo-dev/convert-theme-config-to-next settings -i path/to/settings.yaml
@@ -31,3 +33,5 @@ cd path/to/theme
 
 npx @halo-dev/convert-theme-config-to-next settings
 ```
+
+转换完成之后需要修改 `metadata.name`。

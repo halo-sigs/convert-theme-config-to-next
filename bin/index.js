@@ -28,8 +28,6 @@ program
 
     const themeConfig = yaml.parse(yamlContent);
 
-    console.log(yamlContent);
-
     const theme = {
       apiVersion: "theme.halo.run/v1alpha1",
       kind: "Theme",
@@ -132,7 +130,7 @@ program
       setting.spec.forms.push(form);
     }
 
-    const output = path.resolve(process.cwd(), "setting.2.0.yaml");
+    const output = path.resolve(process.cwd(), "settings.2.0.yaml");
 
     fs.writeFileSync(output, yaml.stringify(setting));
 
