@@ -1,6 +1,6 @@
 {
   "name": "@halo-dev/convert-theme-config-to-next",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0-alpha.1",
   "description": "将 Halo 1.5 的主题配置自动转换为 Halo 2.0 适用的主题配置的工具。",
   "main": "bin/index.js",
   "bin": {
