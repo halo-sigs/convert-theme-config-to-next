@@ -103,11 +103,11 @@ program
           help: item.description,
         };
 
-        if (["text", "attachment"].includes(item.type)) {
-          formSchema.$formkit = "text";
-        }
-
-        if (["textarea", "color", "number"].includes(item.type)) {
+        if (
+          ["text", "textarea", "color", "number", "attachment"].includes(
+            item.type
+          )
+        ) {
           formSchema.$formkit = item.type;
         }
 
